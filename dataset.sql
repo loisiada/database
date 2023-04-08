@@ -1,0 +1,23 @@
+CREATE TABLE public.dataset (
+	id int8 NOT NULL DEFAULT nextval('data_seq'::regclass),
+	instrument_name varchar(50) NOT NULL,
+	localdate date NOT NULL,
+	co numeric NOT NULL,
+	o3 numeric NOT NULL,
+	no2 numeric NOT NULL,
+	so2 numeric NOT NULL,
+	no_ numeric NOT NULL,
+	voc numeric NOT NULL,
+	pm2p5 numeric NOT NULL,
+	pm10 numeric NOT NULL,
+	rh numeric NOT NULL,
+	pressure numeric NOT NULL,
+	sensortemp numeric NOT NULL,
+	heatertemp numeric NOT NULL,
+	internaltemp numeric NOT NULL,
+	timerec int8 NOT NULL,
+	utcdate date NOT NULL,
+	utctime time NOT NULL,
+	alarms varchar NOT NULL,
+	local_time time NULL
+);
